@@ -1,0 +1,31 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "category": "misc",
+  "key": {
+    "P": {
+      "item": "minecraft:prismarine_crystals"
+    },
+	"S":{
+	  "item": "creategbd:elder_guardian_beam_capacitor"
+	},
+	"F":{
+	  "item": "minecraft:prismarine_shard"
+	},
+    "O":{
+      "item": "create:sturdy_sheet"
+    },
+	"H":{
+	  "item": "minecraft:netherite_helmet"
+	}
+  },
+  "pattern": [
+    "OOOOO",
+    "FPSPF",
+    "OOHOO"
+  ],
+  "result": {
+    "count": 1,
+    "id": "creategbd:beam_reactor_helmet"
+  }
+}

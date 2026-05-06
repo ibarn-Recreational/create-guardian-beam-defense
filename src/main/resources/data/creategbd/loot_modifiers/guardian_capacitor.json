@@ -1,0 +1,27 @@
+{
+	"type": "creategbd:append_item",
+	"item": {
+		"id": "creategbd:guardian_beam_capacitor",
+		"Count": 1
+	},
+	"conditions": [
+	{
+		"condition": "neoforge:loot_table_id",
+		"loot_table_id": "minecraft:entities/guardian"
+	},
+	{
+		"condition": "minecraft:killed_by_player"
+	},
+	{
+		"condition": "minecraft:random_chance_with_enchanted_bonus",
+		"unenchanted_chance": 0.25,
+		"enchanted_chance": {
+			"type": "minecraft:linear",
+			"base": 0.35,
+			"per_level_above_first": 0.1
+		},
+		"enchantment": "minecraft:looting"
+	}
+
+    ]
+}

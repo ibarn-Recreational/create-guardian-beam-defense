@@ -1,0 +1,10 @@
+{
+	"parent": "creategbd:block/turret_base",
+	"textures": {
+		"particle": "creategbd:block/reinforced_glass",
+		"beacon": "creategbd:block/basic_laser_turret",
+		"glass": "creategbd:block/reinforced_glass",
+		"glass_bottom": "creategbd:block/reinforced_glass_bottom",
+		"prismarine": "block/prismarine_bricks"
+	}
+}

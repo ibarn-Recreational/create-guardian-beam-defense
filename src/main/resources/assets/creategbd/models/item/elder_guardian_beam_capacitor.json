@@ -1,0 +1,6 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "creategbd:item/elder_guardian_beam_capacitor"
+	}
+}

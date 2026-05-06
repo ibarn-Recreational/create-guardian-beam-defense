@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "creategbd:advanced_laser_turret",
+    "creategbd:basic_laser_turret"
+  ]
+}

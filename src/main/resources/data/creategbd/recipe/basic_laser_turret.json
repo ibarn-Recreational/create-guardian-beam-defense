@@ -1,0 +1,34 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "category": "misc",
+  "key": {
+    "P": {
+      "item": "minecraft:prismarine_bricks"
+    },
+	"S":{
+	  "item": "create:shaft"
+	},
+	"H":{
+	  "item": "minecraft:prismarine_crystals"
+	},
+    "G":{
+      "item": "minecraft:glass"
+    },
+	"C":{
+	  "item": "creategbd:guardian_beam_capacitor"
+	},
+    "I":{
+      "item": "create:zinc_nugget"
+    }
+  },
+  "pattern": [
+    "IGGGI",
+    "GHCHG",
+    "IPSPI"
+  ],
+  "result": {
+    "count": 1,
+    "id": "creategbd:basic_laser_turret"
+  }
+}

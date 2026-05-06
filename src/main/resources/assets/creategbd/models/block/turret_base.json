@@ -1,0 +1,57 @@
+{   "parent": "block/block",
+    "ambientocclusion": false,
+	"render_type": "cutout_mipped",
+    "textures": {
+        "particle": "block/glass",
+        "glass": "block/glass",
+		"glass_bottom": "block/glass",
+        "prismarine": "block/prismarine_bricks",
+        "beacon": "block/beacon"
+    },
+    "elements": [
+        {   "__comment": "Glass shell",
+            "from": [ 0, 0, 0 ],
+            "to": [ 16, 16, 16 ],
+            "faces": {
+                "down":  { "uv": [ 0, 0, 16, 16 ], "texture": "#glass_bottom" },
+                "up":    { "uv": [ 0, 0, 16, 16 ], "texture": "#glass" },
+                "north": { "uv": [ 0, 0, 16, 16 ], "texture": "#glass" },
+                "south": { "uv": [ 0, 0, 16, 16 ], "texture": "#glass" },
+                "west":  { "uv": [ 0, 0, 16, 16 ], "texture": "#glass" },
+                "east":  { "uv": [ 0, 0, 16, 16 ], "texture": "#glass" }
+            }
+        },
+        {   "__comment": "Prismarine base",
+            "from": [ 2, 0.1, 2 ],
+            "to": [ 14, 3, 14 ],
+            "faces": {
+                "down":  { "uv": [ 2,  2, 14, 14 ], "texture": "#prismarine" },
+                "up":    { "uv": [ 2,  2, 14, 14 ], "texture": "#prismarine" },
+                "north": { "uv": [ 2, 13, 14, 16 ], "texture": "#prismarine" },
+                "south": { "uv": [ 2, 13, 14, 16 ], "texture": "#prismarine" },
+                "west":  { "uv": [ 2, 13, 14, 16 ], "texture": "#prismarine" },
+                "east":  { "uv": [ 2, 13, 14, 16 ], "texture": "#prismarine" }
+            }
+        },
+        {   "__comment": "Inner beacon texture",
+            "from": [ 3, 3, 3 ],
+            "to": [ 13, 14, 13 ],
+            "faces": {
+                "down":  { "uv": [ 3, 3, 13, 13 ], "texture": "#beacon" },
+                "up":    { "uv": [ 3, 3, 13, 13 ], "texture": "#beacon" },
+                "north": { "uv": [ 3, 2, 13, 13 ], "texture": "#beacon" },
+                "south": { "uv": [ 3, 2, 13, 13 ], "texture": "#beacon" },
+                "west":  { "uv": [ 3, 2, 13, 13 ], "texture": "#beacon" },
+                "east":  { "uv": [ 3, 2, 13, 13 ], "texture": "#beacon" }
+            }
+        }
+    ],
+    "groups": [
+        {
+            "name": "group",
+            "origin": [0, 0, 0],
+            "color": 0,
+            "children": [0, 1, 2]
+        }
+    ]
+}

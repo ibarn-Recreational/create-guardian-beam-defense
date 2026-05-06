@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "creategbd:block/advanced_laser_turret",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "creategbd:block/advanced_laser_turret",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "creategbd:block/advanced_laser_turret",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "creategbd:block/advanced_laser_turret",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "creategbd:block/advanced_laser_turret"
+    },
+    "facing=west": {
+      "model": "creategbd:block/advanced_laser_turret",
+      "x": 90,
+      "y": 270
+    }
+  }
+}
