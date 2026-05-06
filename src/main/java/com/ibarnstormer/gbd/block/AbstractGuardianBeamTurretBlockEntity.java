@@ -103,16 +103,17 @@ public abstract class AbstractGuardianBeamTurretBlockEntity extends KineticBlock
                     if (laser.getTick() % 10 == 0 && level instanceof ServerLevel serverLevel) {
                         PacketDistributor.sendToPlayersNear(serverLevel, null, pos.getX(), pos.getY(), pos.getZ(), 50, new BroadcastTurretBeamSoundPayload(laser.getId()));
                     }
-                    if (laser.getTick() >= laser.getChargeSpeed() + 1) {
 
-                        if (ownerUUID != null && target.isDeadOrDying() && level instanceof ServerLevel serverLevel) {
-                            Entity owner = serverLevel.getEntity(ownerUUID);
-                            if (owner instanceof Player player)
-                                player.giveExperiencePoints(target.getExperienceReward(serverLevel, owner));
-                        }
-                    }
                     if (discardConditions(laser, target, pos.getCenter(), level)) {
                         targetIterator.remove();
+
+                        if (laser.getTick() >= laser.getChargeSpeed() + 1) {
+                            if (ownerUUID != null && target.isDeadOrDying() && level instanceof ServerLevel serverLevel) {
+                                Entity owner = serverLevel.getEntity(ownerUUID);
+                                if (owner instanceof Player player)
+                                    player.giveExperiencePoints(target.getExperienceReward(serverLevel, owner));
+                            }
+                        }
                     }
                 }
             } else if (Math.abs(getSpeed()) == 0 || !hasSource()) {
